@@ -19,7 +19,11 @@ import { Link } from 'react-router-dom';
 import Testimonials from '../Testimonials/Testimonials';
 import Fade from 'react-reveal/Fade'
 import Marquee from "react-fast-marquee";
+import CountUp from 'react-countup';
+import ScrollTrigger from 'react-scroll-trigger';
+
 function landingPage() {
+  const [counterOn, setCounterOn] = useState(false);
   const [button, setButton] = useState(true);
 
   const showButton = () => {
@@ -43,8 +47,9 @@ function landingPage() {
   return (
     
     <>
+      
       <div>
-        
+       
         <div className={Classes.div1}>
         <Fade bottom>
           <h1 className={Classes.div1_heading}>A FEST FOR xyz</h1>
@@ -89,29 +94,33 @@ function landingPage() {
         <div className={Classes.banner1}>
         <img src={winner1}/>
         </div>
+             
         <Fade bottom>
         <h1>COMPETITIONS</h1>
         <p>Lorem ipsum dolor sit amet consectetur. Sed non placerat purus vitae in. Pellentesque et tempor tortor enim ac sit. Egestas est lacus nullam dignissim semper. Tellus mauris sed ultricies nunc posuere non placerat </p>
-       
-        <button place>Explore</button>
+       <a href='/events'>   
+        <button place>Explore</button></a>
         </Fade>
-         </div>
-       
-        <div className={Classes.div4}>
+        </div>
+         <div className={Classes.div4}>
         <div className={Classes.banner2}>
         <img src={briefing}/>
         </div>
+        
         <Fade bottom>
         <h1>WORKSHOPS</h1>
         <p>Lorem ipsum dolor sit amet consectetur. Sed non placerat purus vitae in. Pellentesque et tempor tortor enim ac sit. Egestas est lacus nullam dignissim semper. Tellus mauris sed ultricies nunc posuere non placerat </p>
-       
-        <button place>Explore</button>
+       <a href='/events'>  
+        <button place>Explore</button></a>
         </Fade>
         </div>
+         {/* FOR DYNAMIC DIGITS ON SCROLLING */}
+        <ScrollTrigger onEnter={()=>setCounterOn(true)} onExit={()=>setCounterOn(false)}>
+      
         <div className={Classes.div5}>
         <div className={Classes.banner3}>
         <img src={redcarpet}/>
-        </div>
+        </div> 
         <Fade bottom>
         <h1>PRONITES</h1>
         <p>Lorem ipsum dolor sit amet consectetur. Sed non placerat purus vitae in. Pellentesque et tempor tortor enim ac sit. Egestas est lacus nullam dignissim semper. Tellus mauris sed ultricies nunc posuere non placerat </p>
@@ -130,19 +139,25 @@ function landingPage() {
         <button place>Explore</button>
         </Fade>
         </div>
+       
+       
         <div className={Classes.div7}>
           <Fade right>
-<h1>75,269</h1>
+            {/* <h1>75,269</h1> */}
+              <h1>
+                {counterOn && <CountUp start={100} end={75269} duration={2} delay={0}/>}+
+              </h1>
+
 <h2>Creative enthusiasts visiting the fest, building a culture and  community of digital art</h2>
 </Fade>
         </div>
-        
+        </ScrollTrigger>
         </div>
         
         <div className={Classes.footer}>
         <Footer />
         </div>
-        
+       
     </>
     
   );

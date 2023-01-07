@@ -1,5 +1,5 @@
 body {
-  font-family: Marcellus;
+  font-family: manrope;
   background-color: #1d033e;
 }
 .event_page {
@@ -174,10 +174,10 @@ flip card
   font-family: 'Manrope';
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 22px;
   text-align: justify;
-
+text-decoration: none;
   color: #ffffff;
 }
 .btnView:hover {
@@ -206,16 +206,17 @@ flip card
   left: 64px;
   /* top: 457px; */
   top: 10px;
-
+ 
   font-family: 'Manrope';
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 33px;
   text-align: center;
-
+  text-decoration: none;
   color: #ffffff;
 }
+
 .addToCartBtn:hover {
   color: #ffffff;
 }
@@ -231,7 +232,6 @@ flip card
   /* left: 75px; */
   /* top: 196px; */
   top: 21px;
-
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
@@ -253,10 +253,10 @@ flip card
 }
 .viewProbImg {
   position: absolute;
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   left: 30px;
-  bottom: 60px;
+  bottom: 65px;
 }
 .type {
   position: absolute;
@@ -378,7 +378,7 @@ transform: rotate(45deg); */
 .workshop-card-title {
   margin: 0 auto;
   color: #fff;
-  font-family: Marcellus;
+  font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -428,7 +428,7 @@ transform: rotate(45deg); */
 #vertical-tab-4,
 #vertical-tab-5,
 #vertical-tab-6 {
-  font-family: Marcellus;
+  font-family: Manrope;
   font-size: 0.4em;
   font-style: normal;
   font-weight: 400;
@@ -545,13 +545,13 @@ transform: rotate(45deg); */
 }
 #modal-modal-title {
   color: #fff;
-  font-family: Marcellus;
+  font-family: Montserrat;
   border-bottom: 2px solid #ffffff;
   padding-bottom: 20px;
 }
 #modal-modal-description {
   color: #ffffff;
-  font-family: Marcellus;
+  font-family: Montserrat;
   border-bottom: 2px solid #ffffff;
 }
 .table {
@@ -589,7 +589,7 @@ transform: rotate(45deg); */
   width: 800px;
   overflow-x: hidden;
   margin: auto;
-  font-family: Marcellus;
+  font-family: manrope;
 }
 .workshop-modal {
   width: 80vw;
@@ -615,7 +615,7 @@ transform: rotate(45deg); */
   float: right;
   display: flex;
   position: absolute;
-  font-family: Marcellus;
+  font-family: manrope;
 }
 .workshop-modal .guest-details p {
   display: flex;
@@ -623,14 +623,14 @@ transform: rotate(45deg); */
   color: #fff;
   margin: 45px;
   font-size: 1.3em;
-  font-family: Marcellus;
+  font-family: manrope;
 }
 .workshop-modal .guest-details h2 {
   color: #fcc907;
   font-size: 1.6em;
   position: absolute;
   left: 293px;
-  font-family: Marcellus;
+  font-family: manrope;
 }
 .workshop-modal .guest-details h3 {
   color: #fcc907;
@@ -638,7 +638,7 @@ transform: rotate(45deg); */
   position: absolute;
   left: 293px;
   bottom: 0;
-  font-family: Marcellus;
+  font-family: manrope;
 }
 .dates {
 }
@@ -648,7 +648,7 @@ transform: rotate(45deg); */
 .workshop-modal .guest-details span {
   color: #fff;
   font-size: 1em;
-  font-family: Marcellus;
+  font-family: manrope;
 }
 .workshop-modal-img {
   object-fit: cover;
@@ -663,11 +663,11 @@ transform: rotate(45deg); */
 }
 #modal-modal-description ul li span {
   color: #fff;
-  font-family: Marcellus;
+  font-family: manrope;
   font-size: 1.4em;
 }
 #modal-modal-description h3 {
-  font-family: Marcellus;
+  font-family: manrope;
   font-size: 1.4em;
   margin-top: 3px;
   padding-left: 20px;
@@ -693,12 +693,12 @@ transform: rotate(45deg); */
   transition: all 0.4s ease;
 }
 #modal-modal-description p {
-  font-family: Marcellus;
+  font-family: manrope;
   font-size: 1.4em;
   padding-left: 20px;
 }
 #modal-modal-description a {
-  font-family: Marcellus;
+  font-family: manrope;
   font-size: 1.4em;
   text-decoration: none;
   padding: 20px;
@@ -780,7 +780,7 @@ transform: rotate(45deg); */
     display: contents;
     flex-direction: column;
     position: absolute;
-    font-family: Marcellus;
+    font-family: manrope;
   }
   .workshop-modal .guest-details p {
     color: #fff;
@@ -788,7 +788,7 @@ transform: rotate(45deg); */
     position: relative;
     font-size: 1.2em;
     text-align: center;
-    font-family: Marcellus;
+    font-family: manrope;
   }
   .workshop-modal .guest-details h2 {
     color: #fcc907;
@@ -797,7 +797,7 @@ transform: rotate(45deg); */
     /* margin-top: 0; */
     right: 0px;
     left: 0;
-    font-family: Marcellus;
+    font-family: manrope;
   }
   .workshop-modal .guest-details h3 {
     color: #fcc907;
@@ -805,7 +805,7 @@ transform: rotate(45deg); */
     bottom: -40px;
     left: 0;
     display: contents;
-    font-family: Marcellus;
+    font-family: manrope;
   }
   .dates {
   }
@@ -821,7 +821,7 @@ transform: rotate(45deg); */
   .workshop-modal .guest-details span {
     color: #fff;
     font-size: 1em;
-    font-family: Marcellus;
+    font-family: manrope;
   }
   .workshop-modal-img {
     object-fit: cover;
@@ -831,7 +831,7 @@ transform: rotate(45deg); */
     border-radius: 50%;
   }
   .mobile h2 {
-    font-family: Marcellus;
+    font-family: manrope;
     font-style: normal;
     font-weight: normal;
     font-size: 1.6em;
@@ -848,7 +848,7 @@ transform: rotate(45deg); */
     color: #fff;
     padding: 20px;
     list-style: none;
-    font-family: Marcellus;
+    font-family: manrope;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -914,22 +914,22 @@ transform: rotate(45deg); */
   }
   #modal-modal-description ul li span {
     color: #fff;
-    font-family: Marcellus;
+    font-family: manrope;
     padding-right: 5px;
     font-size: 0.8em;
   }
   #modal-modal-description h3 {
-    font-family: Marcellus;
+    font-family: manrope;
     font-size: 0.9em;
     padding-left: 4px;
     margin-top: 3px;
   }
   #modal-modal-description p {
-    font-family: Marcellus;
+    font-family: manrope;
     font-size: 0.8em;
   }
   #modal-modal-description a {
-    font-family: Marcellus;
+    font-family: manrope;
     font-size: 1em;
     text-decoration: none;
     color: #fff;
@@ -947,7 +947,7 @@ transform: rotate(45deg); */
     position: relative;
     font-size: 0.9em;
     text-align: center;
-    font-family: Marcellus;
+    font-family: manrope;
    }
 }
 
