@@ -52,6 +52,7 @@ function landingPage() {
             <h1 className={Classes.div1_heading}>A FEST FOR xyz</h1>
 
             {/* <Link to='/authentication'>  */}
+            {/* <Link to="/authentication">  */}
             <a href="/authentication">
               <button className={Classes.register_button}>
                 <p>Register</p>
@@ -104,7 +105,6 @@ function landingPage() {
           <div className={Classes.banner1}>
             <img src={winner1} />
           </div>
-
           <Fade bottom>
             <h1>COMPETITIONS</h1>
             <p>
@@ -121,7 +121,6 @@ function landingPage() {
           <div className={Classes.banner2}>
             <img src={briefing} />
           </div>
-
           <Fade bottom>
             <h1>WORKSHOPS</h1>
             <p>
