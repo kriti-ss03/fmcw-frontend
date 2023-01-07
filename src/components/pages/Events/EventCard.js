@@ -13,10 +13,10 @@ import styled from 'styled-components';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useCart } from 'react-use-cart';
-import rectangle from './Rectangle133.png'
-import arrow from './Vector59.png'
-import frontImg from './Group7175.png'
-import viewProbImg from './Vector.png'
+import rectangle from './Rectangle133.png';
+import arrow from './Vector59.png';
+import frontImg from './Group7175.png';
+import viewProbImg from './Vector.png';
 
 const CardTitle = styled.h2`
   transform: translateZ(55px);
@@ -157,7 +157,7 @@ function EventCard(props) {
             target="_blank"
             className="addToCartBtn"
             rel="noreferrer"
-            style={{ left: props.addToCartLeft , overflow: 'hidden'}}>
+            style={{ left: props.addToCartLeft, overflow: 'hidden' }}>
             {props.ps2}
           </a>
         </div>
