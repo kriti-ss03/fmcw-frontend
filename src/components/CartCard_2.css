@@ -14,7 +14,7 @@ body {
 .card-container {
   max-width: 951px;
   position: relative;
-  margin: 32px;
+  /* margin: 32px; */
   margin-top: 0px;
   /* margin-left: 19px; */
 }
@@ -32,7 +32,8 @@ body {
 }
 .card {
   /* margin-right: 50px; */
-  margin-right: 70px;
+  /* margin-right: 70px; */
+  margin: auto;
   margin-bottom: 50px;
   margin-top: 0px;
   /* max-width: 450px;
@@ -114,7 +115,7 @@ body {
   margin: 0 auto;
   justify-content: flex-start;
   width: 80vw;
-  padding-right: 240px;
+  /* padding-right: 240px; */
   padding-bottom: 89px;
 }
 .card-action {
@@ -404,7 +405,7 @@ body {
     background: #1d033e;
   }
   .event-cards {
-    margin-left: -15px;
+    /* margin-left: -15px; */
     flex-wrap: wrap;
     /* justify-content: center; */
     flex-direction: column;
@@ -422,7 +423,7 @@ body {
     max-width: 400px;
     /* margin-right: -10px; */
     flex-wrap: wrap;
-    min-width: 320px;
+    min-width: 260px;
     height: 400px;
     margin-top: 40px;
   }

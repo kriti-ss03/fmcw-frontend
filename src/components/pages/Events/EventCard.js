@@ -42,9 +42,7 @@ function EventCard(props) {
   }
 
   async function addItemToCart(item) {
-    // console.log('yash');
     const userID = sessionStorage.getItem('userID');
-    // e.preventDefault();
     let obj = {
       userID: userID,
       cartItem: item
@@ -57,9 +55,6 @@ function EventCard(props) {
         'Content-Type': 'application/json'
       }
     });
-    // console.log({ obj });
-
-    // alert('Item added to cart successfully!');/
     window.setTimeout(function () {
       location.reload();
     }, 1000);
@@ -90,7 +85,8 @@ function EventCard(props) {
         background: props.color,
         left: props.left,
         height: props.height,
-        width: props.width
+        width: props.width,
+        marginRight: props.marginRight,
       }}>
       <div className="card-front card-div">
         <b className="type" style={{ left: props.frontLeft }}>
@@ -113,9 +109,12 @@ function EventCard(props) {
       </div>
 
       <div className="card-back card-div">
-        <div className="card-title">
+
+        
+        <div className="card-title" style={{width: props.width}}>
+
           {props.title}
-          <div className="lineTitle"></div>
+          <div className="lineTitle" style={{left: props.lineLeft}}></div>
         </div>
         ;
         <div
@@ -128,8 +127,10 @@ function EventCard(props) {
           }}>
           <b>{props.content}</b>
         </div>
-        <img className="viewProbImg" src="circle-arrow-right-solid.svg" alt="arrow" />
-        <a href={props.link} target="_blank" className="btnView" rel="noreferrer">
+
+        <img className='viewProbImg' src={viewProbImg} style={{ left: props.imgLeft }}></img>
+        <a href={props.link} target="_blank" className="btnView" rel="noreferrer" style={{ left: props.viewStatementLeft }}>
+
           {props.ps}
         </a>
         {sessionStorage.getItem('isLoggedIn') == 'true' && (
@@ -159,6 +160,5 @@ EventCard.defaultProps = {
   content: 150,
   color: '#000',
   color2: '#2ED9FC',
-  left: '75px'
 };
 export default EventCard;
