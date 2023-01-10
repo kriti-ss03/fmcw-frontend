@@ -63,6 +63,15 @@ function landingPage() {
           </Fade>
         </div>
 
+        <div className={Classes.anim}>
+          <Marquee gradient={false} speed={50}>
+            <h2>FMC WEEKEND</h2>
+            <h2>HUES IN HARMONY</h2>
+            <h2>9TH EDITION</h2>
+            <h2>IIT (BHU) VARANASI</h2>
+            <h2>VISTA</h2>
+          </Marquee>
+        </div>
         <div className={Classes.div2}>
           <Fade right>
             <h1>FOR CREATIVE ENTHUSIASTS</h1>
@@ -92,49 +101,40 @@ function landingPage() {
             </section>
           </Fade>
         </div>
-        <div className={Classes.anim}>
-          <Marquee gradient={false} speed={50}>
-            <h2>FMC WEEKEND</h2>
-            <h2>HUES IN HARMONY</h2>
-            <h2>9TH EDITION</h2>
-            <h2>IIT (BHU) VARANASI</h2>
-            <h2>VISTA</h2>
-          </Marquee>
-        </div>
-        <div className={Classes.div3}>
-          <div className={Classes.banner1}>
-            <img src={winner1} />
-          </div>
-          <Fade bottom>
-            <h1>COMPETITIONS</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Sed non placerat purus vitae in. Pellentesque
-              et tempor tortor enim ac sit. Egestas est lacus nullam dignissim semper. Tellus mauris
-              sed ultricies nunc posuere non placerat{' '}
-            </p>
-            <a href="/events">
+        <div className={Classes.eventBox}>
+          <div className={Classes.div3}>
+            <div className={Classes.banner1}>
+              <img src={winner1} />
+            </div>
+            <Fade bottom>
+              <h1>COMPETITIONS</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Sed non placerat purus vitae in.
+                Pellentesque et tempor tortor enim ac sit. Egestas est lacus nullam dignissim
+                semper. Tellus mauris sed ultricies nunc posuere non placerat{' '}
+              </p>
+
               <button place>Explore</button>
-            </a>
-          </Fade>
-        </div>
-        <div className={Classes.div4}>
-          <div className={Classes.banner2}>
-            <img src={briefing} />
+            </Fade>
           </div>
-          <Fade bottom>
-            <h1>WORKSHOPS</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Sed non placerat purus vitae in. Pellentesque
-              et tempor tortor enim ac sit. Egestas est lacus nullam dignissim semper. Tellus mauris
-              sed ultricies nunc posuere non placerat{' '}
-            </p>
-            <a href="/events">
-              <button place>Explore</button>
-            </a>
-          </Fade>
+          <div className={Classes.div4}>
+            <div className={Classes.banner2}>
+              <img src={briefing} />
+            </div>
+            <Fade bottom>
+              <h1>WORKSHOPS</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Sed non placerat purus vitae in.
+                Pellentesque et tempor tortor enim ac sit. Egestas est lacus nullam dignissim
+                semper. Tellus mauris sed ultricies nunc posuere non placerat{' '}
+              </p>
+              <a href="/events">
+                <button place>Explore</button>
+              </a>
+            </Fade>
+          </div>
         </div>
-        {/* FOR DYNAMIC DIGITS ON SCROLLING */}
-        <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
+        <div className={Classes.eventBox}>
           <div className={Classes.div5}>
             <div className={Classes.banner3}>
               <img src={redcarpet} />
@@ -165,19 +165,16 @@ function landingPage() {
               <button place>Explore</button>
             </Fade>
           </div>
-
-          <div className={Classes.div7}>
-            <Fade right>
-              {/* <h1>75,269</h1> */}
-              <h1>{counterOn && <CountUp start={100} end={75269} duration={2} delay={0} />}+</h1>
-
-              <h2>
-                Creative enthusiasts visiting the fest, building a culture and community of digital
-                art
-              </h2>
-            </Fade>
-          </div>
-        </ScrollTrigger>
+        </div>
+        <div className={Classes.div7}>
+          <Fade right>
+            <h1>75,269</h1>
+            <h2>
+              Creative enthusiasts visiting the fest, building a culture and community of digital
+              art
+            </h2>
+          </Fade>
+        </div>
       </div>
 
       <div className={Classes.footer}>
