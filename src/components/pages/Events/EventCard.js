@@ -86,7 +86,7 @@ function EventCard(props) {
         left: props.left,
         height: props.height,
         width: props.width,
-        marginRight: props.marginRight,
+        marginRight: props.marginRight
       }}>
       <div className="card-front card-div">
         <b className="type" style={{ left: props.frontLeft }}>
@@ -109,12 +109,9 @@ function EventCard(props) {
       </div>
 
       <div className="card-back card-div">
-
-        
-        <div className="card-title" style={{width: props.width}}>
-
+        <div className="card-title" style={{ width: props.width }}>
           {props.title}
-          <div className="lineTitle" style={{left: props.lineLeft}}></div>
+          <div className="lineTitle" style={{ left: props.lineLeft }}></div>
         </div>
         ;
         <div
@@ -127,10 +124,13 @@ function EventCard(props) {
           }}>
           <b>{props.content}</b>
         </div>
-
-        <img className='viewProbImg' src={viewProbImg} style={{ left: props.imgLeft }}></img>
-        <a href={props.link} target="_blank" className="btnView" rel="noreferrer" style={{ left: props.viewStatementLeft }}>
-
+        <img className="viewProbImg" src={viewProbImg} style={{ left: props.imgLeft }}></img>
+        <a
+          href={props.link}
+          target="_blank"
+          className="btnView"
+          rel="noreferrer"
+          style={{ left: props.viewStatementLeft }}>
           {props.ps}
         </a>
         {sessionStorage.getItem('isLoggedIn') == 'true' && (
@@ -159,6 +159,6 @@ EventCard.defaultProps = {
   ps2: 'Add To Cart',
   content: 150,
   color: '#000',
-  color2: '#2ED9FC',
+  color2: '#2ED9FC'
 };
 export default EventCard;
