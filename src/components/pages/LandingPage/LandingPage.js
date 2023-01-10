@@ -113,8 +113,9 @@ function landingPage() {
                 Pellentesque et tempor tortor enim ac sit. Egestas est lacus nullam dignissim
                 semper. Tellus mauris sed ultricies nunc posuere non placerat{' '}
               </p>
-
-              <button place>Explore</button>
+              <a href="/events">
+                <button place>Explore</button>
+              </a>
             </Fade>
           </div>
           <div className={Classes.div4}>
@@ -171,7 +172,7 @@ function landingPage() {
           </div>
           <div className={Classes.div7}>
             <Fade right>
-              <h1>75,269</h1>
+              <h1>{counterOn && <CountUp start={100} end={75269} duration={2} delay={0} />}+</h1>;
               <h2>
                 Creative enthusiasts visiting the fest, building a culture and community of digital
                 art
