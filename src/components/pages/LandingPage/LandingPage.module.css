@@ -27,6 +27,24 @@
 
   color: #ffffff;
 }
+.div1_headanime {
+  position: absolute;
+  width: 40%;
+  height: 76px;
+  left: 400px;
+  margin-left: 20px;
+  top: 250px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 4em;
+  line-height: 76px;
+  /* identical to box height */
+
+  text-align: left;
+
+  color: #ffffff;
+}
 
 .register_button {
   display: flex;
@@ -40,7 +58,7 @@
   width: 10vw;
   height: 57px;
   left: 130px;
-  top: 480px;
+  top: 380px;
 
   background: #ff90e8;
   border: 1px solid #000000;
