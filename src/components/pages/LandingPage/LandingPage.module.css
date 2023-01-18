@@ -4,7 +4,7 @@
   box-sizing: border-box;
   position: relative;
   width: 100%;
-  height: 110vh;
+  height: 90vh;
   top: 0;
   background: #685eda;
   border: 2px solid #000000;
@@ -91,10 +91,10 @@
   flex-grow: 0;
 }
 
-.div1 img {
+.div1_img {
   position: relative;
   width: 37vw;
-  height: 100vh;
+  height: 90vh;
   left: 60%;
   top: 0vh;
 }

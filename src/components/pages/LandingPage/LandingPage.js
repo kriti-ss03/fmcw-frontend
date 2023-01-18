@@ -62,7 +62,6 @@ function landingPage() {
                 }}
               />
             </h1>
-
             {/* <Link to='/authentication'>  */}
             {/* <Link to="/authentication">  */}
             <a href="/authentication">
@@ -71,7 +70,8 @@ function landingPage() {
               </button>
             </a>
             {/* </Link> */}
-            <img src="0001-0210.gif" className={Classes.div1_img} />
+            <img src={side_img} className={Classes.div1_img} />;
+            {/* <img src="0001-0210.gif" className={Classes.div1_img} /> */}
           </Fade>
         </div>
 
@@ -200,7 +200,7 @@ function landingPage() {
           </div>
         </ScrollTrigger>
       </div>
-      <Testimonials />
+      {/* <Testimonials /> */}
       <div className={Classes.footer}>
         <Footer />
       </div>
