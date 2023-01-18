@@ -6,11 +6,11 @@ import { Link } from 'react-router-dom';
 function AllEvents() {
   return (
     <div>
-      <section className="section" style={{ padding: '10px' }}>
+      <section className="section">
         <Link to="/events" className="back-btn" style={{ background: '#FE6263' }}>
           Back
         </Link>
-        <div className="card-container" style={{ paddingLeft: '13%' }}>
+        <div className="card-container">
           <div className="event-cards">
             {data.allEventsData.map((item, index) => {
               return (
@@ -26,20 +26,38 @@ function AllEvents() {
                   key={index}
                   color={item.color}
                   color2={item.color2}
-                  left={'0px'}
                   width={'260px'}
                   height={'329px'}
                   contentLeft={'12px'}
-                  contentTop={'64px'}
+                  contentTop={'70px'}
                   contentWidth={'230px'}
                   contentFont={'16px'}
-                  titleLeft={'-60px'}
+                  lineLeft={'23%'}
                   titleTop={'3px'}
                   imgLeft={'7px'}
                   viewStatementLeft={'50px'}
                   addToCartLeft={'6px'}
                   frontLeft={'20px'}
                   display={'none'}
+                />
+              );
+            })}
+          </div>
+          <div className="workshop-cards">
+            {data.allEventsWorkshopData.map((item, index) => {
+              return (
+                <WorkshopCard
+                  img={item.img}
+                  title={item.title}
+                  type={item.type}
+                  price={item.price}
+                  name={item.name}
+                  key={index}
+                  color={item.color}
+                  color2={item.color2}
+                  desc={item.desc}
+                  date={item.date}
+                  time={item.time}
                 />
               );
             })}

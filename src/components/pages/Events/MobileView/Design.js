@@ -13,11 +13,11 @@ function Design() {
         toastClassName="toast-style"
         toastStyle={{ backgroundColor: '#FCC907', color: '#1D033E', fontWeight: 'bold' }}
       />
-      <section className="section" style={{ padding: '10px' }}>
+      <section className="section">
         <Link to="/events" className="back-btn" style={{ background: '#685EDA' }}>
           Back
         </Link>
-        <div className="card-container" style={{ paddingLeft: '13%' }}>
+        <div className="card-container">
           <div className="event-cards">
             {data.designData.map((item, index) => {
               return (
@@ -33,14 +33,13 @@ function Design() {
                   key={index}
                   color={item.color}
                   color2={item.color2}
-                  left={'0px'}
                   width={'260px'}
                   height={'329px'}
                   contentLeft={'12px'}
-                  contentTop={'64px'}
+                  contentTop={'70px'}
                   contentWidth={'230px'}
                   contentFont={'16px'}
-                  titleLeft={'-60px'}
+                  lineLeft={'23%'}
                   titleTop={'3px'}
                   imgLeft={'7px'}
                   viewStatementLeft={'50px'}
@@ -51,25 +50,25 @@ function Design() {
               );
             })}
           </div>
-          {/* <div className="workshop-cards">
+          <div className="workshop-cards">
             {data.designWorkshopData.map((item, index) => {
               return (
                 <WorkshopCard
                   img={item.img}
                   title={item.title}
                   type={item.type}
-                  link={item.link}
                   price={item.price}
-                  prize={item.prize}
+                  name={item.name}
+                  key={index}
+                  color={item.color}
+                  color2={item.color2}
                   desc={item.desc}
                   date={item.date}
                   time={item.time}
-                  item={item}
-                  key={index}
                 />
               );
             })}
-          </div> */}
+          </div>
         </div>
       </section>
       <Footer />
