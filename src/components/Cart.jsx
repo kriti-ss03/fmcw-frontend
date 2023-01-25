@@ -140,7 +140,7 @@ function Cart(props) {
             <img className="star2" src={rightStar}></img>
           </div>
         </div>
-        <div className="cartInfo">
+        {/* <div className="cartInfo">
           <div className="cartInfoHeading">
             Know how you can get access to more events within your budget
           </div>
@@ -164,7 +164,8 @@ function Cart(props) {
               <img className="cartImg2" src={img2}></img>
             </div>
           </Fade>
-        </div>
+        </div> */}
+
         {/* <div className="purchase_details"> */}
         {/* <a href="/events">
           <div className="add-more-cards">
