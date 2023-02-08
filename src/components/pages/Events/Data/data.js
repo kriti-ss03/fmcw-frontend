@@ -208,12 +208,12 @@ const data = {
       genre: 'design',
       type: 'Contest',
       title: 'Design-a-thon',
-      link: 'https://drive.google.com/file/d/1KvkUXWo3zBxsepNKzsoxRY4JCC92QFsb/view?usp=sharing',
+      link: 'https://drive.google.com/file/d/1Ii3sWcGiPIIq2ESFA7UtqjFbezvT85e6/view?usp=share_link',
       price: 249,
       prize: 'Prizes Worth- 10K',
       color: '#685EDA',
       color2: '#9990FF',
-      mode: 'OFFLINE',
+      mode: 'ONLINE',
       content:
         "It's a 24- hour offline event having team of 1-4 people each in which you'll have to rebrand an intriguing company using a different product line than the one it now uses."
     },
